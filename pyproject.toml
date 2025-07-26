@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "numpy>=2.3.2",
+    "pillow>=11.3.0",
     "pycuda>=2025.1.1",
 ]
 
@@ -20,3 +21,7 @@ build-backend = "uv_build"
 dev = [
     "ruff>=0.12.5",
 ]
+
+[tool.ruff.lint]
+# Enable the isort rules.
+extend-select = ["I"]
