@@ -171,8 +171,6 @@ def main():
                 images_grid[row][col], (col * image_width, row * image_height)
             )
     # resize the combined image to image size
-    combined_image = combined_image.resize(
-        (image_width, image_height)
-    )
+    combined_image = combined_image.resize((image_width, image_height))
 
     combined_image.save("output.png")
